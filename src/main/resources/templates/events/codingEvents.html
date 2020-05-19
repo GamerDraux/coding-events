@@ -4,12 +4,7 @@
 <body>
 <nav th:replace="fragments :: navigation"></nav>
 
-<h1>All Events</h1>
+<h1>Coding Events</h1>
 
-<p th:unless="${events} and ${events.size()}">No Events</p>
-<ul>
-    <li th:each="event : ${events}"
-        th:text="${event}"></li>
-</ul>
 </body>
 </html>
